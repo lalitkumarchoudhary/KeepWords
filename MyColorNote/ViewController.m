@@ -159,19 +159,21 @@
     
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-
-- (void)tableView:(UITableView *)cTableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(NSArray *)tableView:(UITableView *)aTableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSManagedObjectContext *context = [self managedObjectContext];
     
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete object from database
+    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Edit" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        //insert your editAction here
+        AddNoteViewController *noteVC = [AddNoteViewController new];
+        noteVC.note = [self.notes objectAtIndex:indexPath.row];
+        [self.navigationController pushViewController:noteVC animated:NO];
+        
+    }];
+    editAction.backgroundColor = [UIColor lightGrayColor];
+    
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Delete"  handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        //insert your deleteAction here
         [context deleteObject:[self.notes objectAtIndex:indexPath.row]];
         
         NSError *error = nil;
@@ -183,8 +185,38 @@
         // Remove device from table view
         [self.notes removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
+    }];
+    deleteAction.backgroundColor = [UIColor redColor];
+    return @[deleteAction,editAction];
 }
+
+
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    // Return NO if you do not want the specified item to be editable.
+//    return YES;
+//}
+//
+//
+//- (void)tableView:(UITableView *)cTableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSManagedObjectContext *context = [self managedObjectContext];
+//    
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        // Delete object from database
+//        [context deleteObject:[self.notes objectAtIndex:indexPath.row]];
+//        
+//        NSError *error = nil;
+//        if (![context save:&error]) {
+//            NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
+//            return;
+//        }
+//        
+//        // Remove device from table view
+//        [self.notes removeObjectAtIndex:indexPath.row];
+//        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//    }
+//}
 
 - (void)searchButtonPressed:(id)sender
 {
