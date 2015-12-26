@@ -15,19 +15,8 @@
 		1654D5BF1AE786CE001A37F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1654D5BD1AE786CE001A37F5 /* Main.storyboard */; };
 		1654D5C11AE786CE001A37F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1654D5C01AE786CE001A37F5 /* Images.xcassets */; };
 		1654D5C41AE786CE001A37F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1654D5C21AE786CE001A37F5 /* LaunchScreen.xib */; };
-		1654D5D01AE786CE001A37F5 /* MyColorNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1654D5CF1AE786CE001A37F5 /* MyColorNoteTests.m */; };
 		16A9CE911AE8FE3E00476017 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A9CE901AE8FE3E00476017 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1654D5CA1AE786CE001A37F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1654D5A51AE786CE001A37F5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1654D5AC1AE786CE001A37F5;
-			remoteInfo = MyColorNote;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		160CEF221AE8BEEE002F55A0 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
@@ -43,22 +32,12 @@
 		1654D5BE1AE786CE001A37F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1654D5C01AE786CE001A37F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1654D5C31AE786CE001A37F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		1654D5C91AE786CE001A37F5 /* MyColorNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyColorNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1654D5CE1AE786CE001A37F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1654D5CF1AE786CE001A37F5 /* MyColorNoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyColorNoteTests.m; sourceTree = "<group>"; };
 		16A9CE8F1AE8FE3E00476017 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		16A9CE901AE8FE3E00476017 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1654D5AA1AE786CE001A37F5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1654D5C61AE786CE001A37F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				1654D5AF1AE786CE001A37F5 /* MyColorNote */,
-				1654D5CC1AE786CE001A37F5 /* MyColorNoteTests */,
 				1654D5AE1AE786CE001A37F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				1654D5AD1AE786CE001A37F5 /* MyColorNote.app */,
-				1654D5C91AE786CE001A37F5 /* MyColorNoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,23 +92,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1654D5CC1AE786CE001A37F5 /* MyColorNoteTests */ = {
-			isa = PBXGroup;
-			children = (
-				1654D5CF1AE786CE001A37F5 /* MyColorNoteTests.m */,
-				1654D5CD1AE786CE001A37F5 /* Supporting Files */,
-			);
-			path = MyColorNoteTests;
-			sourceTree = "<group>";
-		};
-		1654D5CD1AE786CE001A37F5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1654D5CE1AE786CE001A37F5 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,24 +112,6 @@
 			productReference = 1654D5AD1AE786CE001A37F5 /* MyColorNote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1654D5C81AE786CE001A37F5 /* MyColorNoteTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1654D5D61AE786CE001A37F5 /* Build configuration list for PBXNativeTarget "MyColorNoteTests" */;
-			buildPhases = (
-				1654D5C51AE786CE001A37F5 /* Sources */,
-				1654D5C61AE786CE001A37F5 /* Frameworks */,
-				1654D5C71AE786CE001A37F5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1654D5CB1AE786CE001A37F5 /* PBXTargetDependency */,
-			);
-			name = MyColorNoteTests;
-			productName = MyColorNoteTests;
-			productReference = 1654D5C91AE786CE001A37F5 /* MyColorNoteTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,10 +123,6 @@
 				TargetAttributes = {
 					1654D5AC1AE786CE001A37F5 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					1654D5C81AE786CE001A37F5 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 1654D5AC1AE786CE001A37F5;
 					};
 				};
 			};
@@ -202,7 +140,6 @@
 			projectRoot = "";
 			targets = (
 				1654D5AC1AE786CE001A37F5 /* MyColorNote */,
-				1654D5C81AE786CE001A37F5 /* MyColorNoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,13 +152,6 @@
 				1654D5BF1AE786CE001A37F5 /* Main.storyboard in Resources */,
 				1654D5C41AE786CE001A37F5 /* LaunchScreen.xib in Resources */,
 				1654D5C11AE786CE001A37F5 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1654D5C71AE786CE001A37F5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,23 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1654D5C51AE786CE001A37F5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1654D5D01AE786CE001A37F5 /* MyColorNoteTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1654D5CB1AE786CE001A37F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1654D5AC1AE786CE001A37F5 /* MyColorNote */;
-			targetProxy = 1654D5CA1AE786CE001A37F5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1654D5BD1AE786CE001A37F5 /* Main.storyboard */ = {
@@ -377,40 +291,6 @@
 			};
 			name = Release;
 		};
-		1654D5D71AE786CE001A37F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MyColorNoteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyColorNote.app/MyColorNote";
-			};
-			name = Debug;
-		};
-		1654D5D81AE786CE001A37F5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MyColorNoteTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyColorNote.app/MyColorNote";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,15 +308,6 @@
 			buildConfigurations = (
 				1654D5D41AE786CE001A37F5 /* Debug */,
 				1654D5D51AE786CE001A37F5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1654D5D61AE786CE001A37F5 /* Build configuration list for PBXNativeTarget "MyColorNoteTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1654D5D71AE786CE001A37F5 /* Debug */,
-				1654D5D81AE786CE001A37F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

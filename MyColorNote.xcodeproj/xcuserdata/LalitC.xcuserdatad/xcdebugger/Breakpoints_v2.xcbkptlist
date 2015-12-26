@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyColorNote/ViewController.m"
-            timestampString = "451576658.128393"
+            timestampString = "472863308.821065"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "219"
-            endingLineNumber = "219"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "-handleLongPress:"
             landmarkType = "5">
          </BreakpointContent>
